@@ -55,8 +55,11 @@ exports.config = {
 			{
 			custom: ['testScenario1.js','testScenario2.js','testScenario4.js']
 			},
-		
-		multiCapabilities: [
+		/**
+		 * Comment out multi capabilitites if Firefox in your system is not 
+		 * compatible with The version of GeckoDriver downloaded by NPM
+		 */
+		/*multiCapabilities: [
 		    {
 		        'browserName': 'chrome'
 		    },
@@ -64,5 +67,5 @@ exports.config = {
 		        'browserName': 'firefox'
 		    }
 		  ],
-		 maxSessions: 1
+		 maxSessions: 1*/
 };
